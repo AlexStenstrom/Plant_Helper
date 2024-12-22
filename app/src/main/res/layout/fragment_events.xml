@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".plantActivity.PlantEventsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_event_button_text"
+
+
+        app:icon="@drawable/outline_add_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/wateringEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/addEventButton"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/humidity_high_24px" />
+
+    <TextView
+        android:id="@+id/wateringEventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/wateringEventButton"
+        app:layout_constraintTop_toTopOf="@id/wateringEventButton"
+        app:layout_constraintBottom_toBottomOf="@id/wateringEventButton"
+        android:layout_marginEnd="8dp"
+        android:text="@string/watering_event_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nutritionEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/wateringEventButton"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/psychiatry_24px"
+        app:strokeColor="@color/light_primary"
+        />
+
+    <TextView
+        android:id="@+id/nutritionEventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/nutritionEventButton"
+        app:layout_constraintTop_toTopOf="@id/nutritionEventButton"
+        app:layout_constraintBottom_toBottomOf="@id/nutritionEventButton"
+        android:layout_marginEnd="8dp"
+        android:text="@string/nutrition_event_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/statusEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nutritionEventButton"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/chat_bubble_24px" />
+
+    <TextView
+        android:id="@+id/statusEventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/statusEventButton"
+        app:layout_constraintTop_toTopOf="@id/statusEventButton"
+        app:layout_constraintBottom_toBottomOf="@id/statusEventButton"
+        android:layout_marginEnd="8dp"
+        android:text="@string/status_event_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/replantEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/statusEventButton"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/potted_plant_24px" />
+
+    <TextView
+        android:id="@+id/replantEventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/replantEventButton"
+        app:layout_constraintTop_toTopOf="@id/replantEventButton"
+        app:layout_constraintBottom_toBottomOf="@id/replantEventButton"
+        android:layout_marginEnd="8dp"
+        android:text="@string/replant" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cameraEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/replantEventButton"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/photo_camera_24px" />
+
+    <TextView
+        android:id="@+id/cameraEventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/cameraEventButton"
+        app:layout_constraintTop_toTopOf="@id/cameraEventButton"
+        app:layout_constraintBottom_toBottomOf="@id/cameraEventButton"
+        android:layout_marginEnd="8dp"
+        android:text="@string/camera_event_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/filterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/filter_list_24px">
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/resetFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/filterButton"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:clickable="true"
+        android:src="@drawable/restart_alt_24px" />
+
+    <TextView
+        android:id="@+id/resetFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/resetFilterButton"
+        app:layout_constraintTop_toTopOf="@id/resetFilterButton"
+        app:layout_constraintBottom_toBottomOf="@id/resetFilterButton"
+        android:layout_marginStart="8dp"
+        android:text="@string/reset_filter_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/wateringFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resetFilterButton"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:clickable="true"
+        android:src="@drawable/humidity_high_24px" />
+
+    <TextView
+        android:id="@+id/wateringFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/wateringFilterButton"
+        app:layout_constraintTop_toTopOf="@id/wateringFilterButton"
+        app:layout_constraintBottom_toBottomOf="@id/wateringFilterButton"
+        android:layout_marginStart="8dp"
+        android:text="Watering" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nutritionFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/wateringFilterButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/psychiatry_24px"
+        app:strokeColor="@color/light_primary"
+        />
+
+    <TextView
+        android:id="@+id/nutritionFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/nutritionFilterButton"
+        app:layout_constraintTop_toTopOf="@id/nutritionFilterButton"
+        app:layout_constraintBottom_toBottomOf="@id/nutritionFilterButton"
+        android:layout_marginStart="8dp"
+        android:text="@string/nutrition_event_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/statusFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nutritionFilterButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/chat_bubble_24px" />
+
+
+    <TextView
+        android:id="@+id/statusFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/statusFilterButton"
+        app:layout_constraintTop_toTopOf="@id/statusFilterButton"
+        app:layout_constraintBottom_toBottomOf="@id/statusFilterButton"
+        android:layout_marginStart="8dp"
+        android:text="@string/status_filter_text" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/replantFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/statusFilterButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/potted_plant_24px" />
+
+
+    <TextView
+        android:id="@+id/replantFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/replantFilterButton"
+        app:layout_constraintTop_toTopOf="@id/replantFilterButton"
+        app:layout_constraintBottom_toBottomOf="@id/replantFilterButton"
+        android:layout_marginStart="8dp"
+        android:text="@string/replants" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cameraFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/replantFilterButton"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/photo_camera_24px" />
+
+    <TextView
+        android:id="@+id/cameraFilterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/cameraFilterButton"
+        app:layout_constraintTop_toTopOf="@id/cameraFilterButton"
+        app:layout_constraintBottom_toBottomOf="@id/cameraFilterButton"
+        android:layout_marginStart="8dp"
+        android:text="@string/photo_filter_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

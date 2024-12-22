@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="water_slider_initial">watering_slider_initial
+        <item>3</item>
+        <item>7</item>
+
+    </array>
+
+    <array name="nutrition_slider_initial">nutrition_slider_initial
+        <item>5</item>
+        <item>9</item>
+    </array>
+</resources>

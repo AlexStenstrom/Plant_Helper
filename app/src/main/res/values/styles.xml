@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PlantListCardStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="cardBackgroundColor">@color/light_primary</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="android:maxWidth">150dp</item>
+        <item name="android:maxHeight">150dp</item>
+    </style>
+
+    <style name="TopAppBarStyle" parent="Widget.Material3.AppBarLayout">
+        <item name="backgroundColor">@color/forrest_green</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="plantInfoCardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="android:maxWidth">150dp</item>
+        <item name="android:maxHeight">250dp</item>
+
+
+    </style>
+
+    <style name="eventCardStyle" parent="Widget.Material3.CardView.Outlined">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="android:minHeight">80dp</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/light_primary</item>
+    </style>
+
+    <style name="InfoSliderStyle" parent="Widget.Material3.Slider">
+        <item name="android:disabledAlpha">1.0</item>
+        <item name="android:thumbTint">@color/forrest_green</item>
+    </style>
+
+    <style name="InfoTextStyle" parent="Widget.Material3.CardView.Outlined" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+
+</resources>

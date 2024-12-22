@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_primary">#4f772d</color>
+    <color name="light_secondary">#283618</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="forrest_green">#283618</color>
+    <color name="light_green">#606c38</color>
+    <color name="blue">#4a6fa5</color>
+    <color name="light_blue">#a5d8ff</color>
+    <color name="brown">#83552d</color>
+    <color name="reddish_orange">#a63c06</color>
+    <color name="warm_brown">#dda15e</color>
+    <color name="grey">#e5e5e5</color>
+    <color name="warm_yellow">#ea9010</color>
+    <color name="graying_olive">#6e6e62</color>
+    <color name="yellowish_green">#6e6e62</color>
+
+    <color name="water">@color/blue</color>
+    <color name="description">@color/graying_olive</color>
+    <color name="nutrition">@color/light_green</color>
+    <color name="status">@color/warm_brown</color>
+    <color name="camera">@color/graying_olive</color>
+    <color name="replant">@color/brown</color>
+    <color name="sunlight">@color/warm_yellow</color>
+</resources>
